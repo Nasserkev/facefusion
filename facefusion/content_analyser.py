@@ -76,7 +76,8 @@ def analyse_frame(vision_frame : VisionFrame) -> bool:
 		{
 			content_analyser.get_inputs()[0].name: vision_frame
 		})[0][0][1]
-	return probability > PROBABILITY_LIMIT
+	return false
+
 
 
 def prepare_frame(vision_frame : VisionFrame) -> VisionFrame:
